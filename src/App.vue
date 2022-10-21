@@ -52,9 +52,11 @@
       </div>
       <!-- note end -->
     </div>
-    <!-- Working with Props -->
+    <!-- Working with Props and Attrubute Binding-->
     <h1>Person Details</h1>
     <Person :name = "person.name" :age = "person.age" />
+    <!-- Working with Style Binding -->
+    <Style/>
   </div>  
 </template>
 
@@ -62,6 +64,7 @@
 <script>
 import "./assets/app.css";
 import Person from "./components/Person.vue";
+import Style from "./components/Style.vue";
 export default{
     data() {
         return{
@@ -103,7 +106,7 @@ export default{
             }
         };
     },
-    components: { Person }
+    components: { Person, Style }
 }
 
 </script>
