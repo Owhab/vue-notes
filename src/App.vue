@@ -1,12 +1,10 @@
-<script setup>
-import "./assets/app.css";
-</script>
+
 
 <template>
   <div class="app">
-    <pre>
-      <!-- {{ notes }} -->
-    </pre>
+    <!-- <pre>
+      {{ notes }}
+    </pre> -->
     <div class="header"><h1 class="app-title">Vue Notes</h1></div>
     <div class="contextbox">
       <input type="text" placeholder="Title" />
@@ -46,8 +44,8 @@ import "./assets/app.css";
         style="background-color: rgb(216, 226, 220)"
       >
         <div>
-          <h3 class="title">very important note</h3>
-          <p>heyyy</p>
+          <h3 class="title">{{note.title}}</h3>
+          <p>{{note.description}}</p>
         </div>
         <p class="time">a few seconds ago</p>
         <div class="buttons"><button class="delete">×</button></div>
@@ -56,6 +54,51 @@ import "./assets/app.css";
     </div>
   </div>  
 </template>
+
+
+<script>
+import "./assets/app.css";
+export default{
+  data(){
+    return{
+      notes:[
+        {
+          title: 'Learning Vue',
+          description: 'Vue Js is a JavaScript Frontend Framework',
+          color: 'salmon',
+        },
+        {
+          title: 'Learning React',
+          description: 'React Js is a JavaScript Frontend Framework',
+          color: 'salmon',
+        },
+        {
+          title: 'Learning NodeJs',
+          description: 'NodeJs Js is a JavaScript Backend Framework',
+          color: 'salmon',
+        },
+        {
+          title: 'Learning Laravel',
+          description: 'Laravel Js is a Php Backend Framework',
+          color: 'salmon',
+        },
+        {
+          title: 'Learning Redux',
+          description: 'Vue Js is a JavaScript Frontend Framework',
+          color: 'salmon',
+        },
+        {
+          title: 'Learning DJango',
+          description: 'Vue Js is a JavaScript Frontend Framework',
+          color: 'salmon',
+        },
+      ]
+    }
+  }
+
+}
+
+</script>
 
 <style scoped>
 header {

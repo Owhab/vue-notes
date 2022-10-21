@@ -43,6 +43,7 @@ body {
   padding: 15px;
   padding-bottom: 5px;
   border-radius: 5px;
+  border: 2px solid;
 }
 .contextbox textarea,
 .contextbox input {
