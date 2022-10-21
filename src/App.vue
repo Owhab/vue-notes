@@ -54,7 +54,7 @@
     </div>
     <!-- Working with Props -->
     <h1>Person Details</h1>
-    <Person name = "Owhab" age = "24" />
+    <Person :name = "person.name" :age = "person.age" />
   </div>  
 </template>
 
@@ -64,8 +64,8 @@ import "./assets/app.css";
 import Person from "./components/Person.vue";
 export default{
     data() {
-        return {
-            notes: [
+        return{
+           notes: [
                 {
                     title: "Learning Vue",
                     description: "Vue Js is a JavaScript Frontend Framework",
@@ -96,7 +96,11 @@ export default{
                     description: "Vue Js is a JavaScript Frontend Framework",
                     color: "salmon",
                 },
-            ]
+            ],
+            person: {
+              name: "Abdul Owhab",
+              age: 24,
+            }
         };
     },
     components: { Person }

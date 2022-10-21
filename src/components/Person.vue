@@ -6,7 +6,8 @@
 </template>
 <script>
 export default {
-    props: ["name", "age"]
+    props: ["name", "age"],
+    
     
 }
 </script>
