@@ -52,50 +52,54 @@
       </div>
       <!-- note end -->
     </div>
+    <!-- Working with Props -->
+    <h1>Person Details</h1>
+    <Person name = "Owhab" age = "24" />
   </div>  
 </template>
 
 
 <script>
 import "./assets/app.css";
+import Person from "./components/Person.vue";
 export default{
-  data(){
-    return{
-      notes:[
-        {
-          title: 'Learning Vue',
-          description: 'Vue Js is a JavaScript Frontend Framework',
-          color: 'salmon',
-        },
-        {
-          title: 'Learning React',
-          description: 'React Js is a JavaScript Frontend Framework',
-          color: 'salmon',
-        },
-        {
-          title: 'Learning NodeJs',
-          description: 'NodeJs Js is a JavaScript Backend Framework',
-          color: 'salmon',
-        },
-        {
-          title: 'Learning Laravel',
-          description: 'Laravel Js is a Php Backend Framework',
-          color: 'salmon',
-        },
-        {
-          title: 'Learning Redux',
-          description: 'Vue Js is a JavaScript Frontend Framework',
-          color: 'salmon',
-        },
-        {
-          title: 'Learning DJango',
-          description: 'Vue Js is a JavaScript Frontend Framework',
-          color: 'salmon',
-        },
-      ]
-    }
-  }
-
+    data() {
+        return {
+            notes: [
+                {
+                    title: "Learning Vue",
+                    description: "Vue Js is a JavaScript Frontend Framework",
+                    color: "salmon",
+                },
+                {
+                    title: "Learning React",
+                    description: "React Js is a JavaScript Frontend Framework",
+                    color: "salmon",
+                },
+                {
+                    title: "Learning NodeJs",
+                    description: "NodeJs Js is a JavaScript Backend Framework",
+                    color: "salmon",
+                },
+                {
+                    title: "Learning Laravel",
+                    description: "Laravel Js is a Php Backend Framework",
+                    color: "salmon",
+                },
+                {
+                    title: "Learning Redux",
+                    description: "Vue Js is a JavaScript Frontend Framework",
+                    color: "salmon",
+                },
+                {
+                    title: "Learning DJango",
+                    description: "Vue Js is a JavaScript Frontend Framework",
+                    color: "salmon",
+                },
+            ]
+        };
+    },
+    components: { Person }
 }
 
 </script>
