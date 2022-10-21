@@ -2,12 +2,16 @@
     <div>
         <div class="box" :style = "{
             backgroundColor: color,
+            height: height +'rem',
+            width: width +'rem',
         }">
 
         </div>
         <p>{{color}}</p>
 
         <input type="color" v-model = "color">
+        <input type="range" name="" id="" v-model = "height">
+        <input type="range" name="" id="" v-model = "width">
         
     </div>
 </template>
@@ -15,7 +19,10 @@
     export default{
         data(){
         return{
-            color: "#000",
+            color: "",
+            height: '',
+            width: '',
+            
         }
     }
     }
